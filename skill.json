@@ -1,0 +1,41 @@
+{
+  "name": "genpark-b2b-kirana-wholesale-retail-sme-credit-engine-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - B2B retail wholesale marketplace and SME working capital credit engine transforming traditional neighborhood kirana stores.",
+  "author": "genpark",
+  "category": "fintech",
+  "tags": [
+    "b2b-wholesale",
+    "kirana-commerce",
+    "sme-credit",
+    "working-capital",
+    "jumbotail"
+  ],
+  "inputs": {
+    "kirana_store_id": {
+      "type": "string"
+    },
+    "wholesale_staples": {
+      "type": "array"
+    },
+    "apply_credit_line": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "wholesale_order_id": {
+      "type": "string"
+    },
+    "total_order_inr": {
+      "type": "number"
+    },
+    "sme_working_capital_credit_approved": {
+      "type": "boolean"
+    },
+    "digital_khata_ledger_updated": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
